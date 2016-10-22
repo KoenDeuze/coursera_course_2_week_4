@@ -2,7 +2,7 @@ rankhospital <- function(state, outcome, rank_num='best') {
         
         ## check if the user input for rank is valid
         if(is.character(rank_num)) {
-                if(rank_num %in% c('best','worse') == FALSE) {
+                if(rank_num %in% c('best','worst') == FALSE) {
                         stop('invalid user-input: rank')
                 }
         }
